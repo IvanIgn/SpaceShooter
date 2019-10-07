@@ -1,0 +1,28 @@
+﻿<Properties StartupConfiguration="{13060BCC-76DC-05B5-0122-DB249E89DA37}|">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Enemy/SimpleEnemy.cs">
+    <Files>
+      <File FileName="Assets/Scripts/Enemy/SimpleEnemy.cs" Line="15" Column="4" />
+      <File FileName="Assets/Scripts/Enemy/Mine.cs" Line="34" Column="29" />
+      <File FileName="Assets/Scripts/ShipController.cs" Line="24" Column="2" />
+      <File FileName="Assets/Scripts/ShipBulletCollision.cs" Line="22" Column="11" />
+      <File FileName="Assets/Scripts/MoveObj.cs" Line="12" Column="1" />
+      <File FileName="Assets/Scripts/Enemy/EnemyGenerator.cs" Line="14" Column="1" />
+      <File FileName="Assets/Scripts/Star.cs" Line="9" Column="18" />
+      <File FileName="Assets/Scripts/SoundManager.cs" Line="19" Column="42" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="SpaceShouter" expanded="True" selected="True" />
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="3294b4d2-4888-4737-8e47-c9759b4c29c3" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>
