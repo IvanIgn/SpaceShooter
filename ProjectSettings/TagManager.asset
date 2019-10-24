@@ -8,6 +8,10 @@ TagManager:
   - enemyB
   - enemy
   - playerShip
+  - Ship
+  - mine
+  - shipR
+  - bonus
   layers:
   - Default
   - TransparentFX
@@ -17,14 +21,14 @@ TagManager:
   - UI
   - 
   - 
-  - 
+  - rocket
   - ship
   - enemy
   - 
-  - 
-  - 
-  - 
-  - 
+  - bonus
+  - bonusRock
+  - enemyBullet
+  - shipBullet
   - 
   - 
   - 

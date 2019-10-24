@@ -1,22 +1,19 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
+using System.Collections;
 
-public class SoundManager : MonoBehaviour
-{
+public class SoundManager : MonoBehaviour {
 
-    public GameObject soundEffect;
-    public AudioClip[] audioClips;
+	public GameObject sfx;
+	public AudioClip[] audioClips;
 
+	public void PlaySound(int soundNum)
+	{
+		GameObject s = Instantiate(sfx,Vector2.zero,Quaternion.identity) as GameObject;
+		AudioSource AS = s.GetComponent<AudioSource>();
 
-    public void PlaySound(int soundN)
-    {
-        GameObject sound = Instantiate(soundEffect, Vector2.zero, Quaternion.identity) as GameObject;
-        AudioSource audSource = sound.GetComponent<AudioSource>();
+		AS.clip = audioClips[soundNum];
+		AS.Play();
+		Destroy(s,audioClips[soundNum].length);
+	}
 
-        audSource.clip = audioClips[soundN];
-        audSource.Play();
-        Destroy(sound, audioClips[soundN].length);
-    }
-    
 }

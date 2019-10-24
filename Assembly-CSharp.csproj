@@ -62,17 +62,23 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Scripts\Enemy\EnemyGenerator.cs" />
+    <Compile Include="Assets\Scripts\Bonus.cs" />
+    <Compile Include="Assets\Scripts\BonusLife.cs" />
     <Compile Include="Assets\Scripts\Enemy\Mine.cs" />
     <Compile Include="Assets\Scripts\Enemy\SimpleEnemy.cs" />
+    <Compile Include="Assets\Scripts\EnemyGenerator.cs" />
     <Compile Include="Assets\Scripts\Joystick.cs" />
+    <Compile Include="Assets\Scripts\Menu\MainMenu.cs" />
+    <Compile Include="Assets\Scripts\Menu\PauseMenu.cs" />
     <Compile Include="Assets\Scripts\MoveObj.cs" />
-    <Compile Include="Assets\Scripts\MoveObject.cs" />
-    <Compile Include="Assets\Scripts\ShipBulletCollision.cs" />
+    <Compile Include="Assets\Scripts\PlanetRotation.cs" />
+    <Compile Include="Assets\Scripts\Rocket.cs" />
+    <Compile Include="Assets\Scripts\RocketBonus.cs" />
+    <Compile Include="Assets\Scripts\ShipBullet.cs" />
     <Compile Include="Assets\Scripts\ShipController.cs" />
     <Compile Include="Assets\Scripts\SoundManager.cs" />
-    <Compile Include="Assets\Scripts\SpaceGenerator.cs" />
-    <Compile Include="Assets\Scripts\Star.cs" />
+    <Compile Include="Assets\Scripts\StarGenerator.cs" />
+    <Compile Include="Assets\Scripts\StarMove.cs" />
     <Reference Include="Unity.Timeline.Editor">
       <HintPath>/Users/ivanignatkov/Desktop/UnityGames/SpaceShouter/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
     </Reference>

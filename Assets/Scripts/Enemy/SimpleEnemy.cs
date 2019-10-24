@@ -9,62 +9,39 @@ public class SimpleEnemy : MonoBehaviour {
 	public Transform shootPoint;
 	public ShipController Ship;
 	public bool isDead = false;
-    //public AudioClip soundEffect;
 	public SoundManager sm;
-    
-   
 
 	void Start()
 	{
-        sm = GameObject.Find("PlayZone").GetComponent<SoundManager>();
-        Ship = GameObject.Find("shipPlayer").GetComponent<ShipController>();
+		sm = GameObject.Find("PlayZone").GetComponent<SoundManager>();
+		Ship = GameObject.Find("ShipPlayer").GetComponent<ShipController>();
 		InvokeRepeating("Shoot",2,shootDelay);
-        
 	}
 
 	void Update()
 	{
 		if(Life_points == 0 && !isDead)
 		{
-            Dies();
-            
+			Boom();
 		}
-
-		if (transform.position.x <= -14)
-		{
-			Destroy(gameObject);
-		}
-        ///////// works but not exactly ////////        
-        
-        if (Vector2.Distance(transform.position, Ship.transform.position) <= 1.2f)
-        {
-            Destroy(gameObject);
-            sm.PlaySound(0);
-        }
-        
-       
-        
 	}
-    
-	void Dies()
+
+	void Boom()
 	{
 		isDead = true;
 		Destroy(gameObject);
-        Ship.AddScore(1);
 		sm.PlaySound(0);
-
-		
+		Ship.AddScore(1);
 	}
     
-   
 	void Shoot()
 	{
 		GameObject b = Instantiate(bullet,shootPoint.position,Quaternion.identity) as GameObject;
-        sm.PlaySound(3);
-		Destroy(b,6);
+        sm.PlaySound(5);
+        Destroy(b,6);
 	}
 
-	 void Damage(int dmg) 
+	public void Damage(int dmg) 
 	{
 		Life_points -= dmg;
 		if(Life_points < 0)
@@ -83,22 +60,14 @@ public class SimpleEnemy : MonoBehaviour {
 			
 		}
         
-		if(coll.gameObject.CompareTag("enemyB"))
-		{
-			//Damage(1);
-			Destroy(coll.gameObject);
-			sm.PlaySound(1);
-		}
-    /*
-       if(coll.gameObject.CompareTag("playerShip"))
+
+        if(coll.gameObject.CompareTag("enemy"))
         {
-            Destroy(coll.gameObject);
-            //Destroy(gameObject); 
-           // Dies();
+            Physics2D.IgnoreCollision(coll.gameObject.GetComponent<Collider2D>(), GetComponent<Collider2D>());
         }
 
-    */
-        
-	}
+       
+
+    }
 
 }

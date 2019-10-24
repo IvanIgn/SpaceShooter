@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 18774b6232a834739aeacea6b230b8b5
+guid: 2be8f5f8dc26a48ea80dfb633e66cb95
 TextureImporter:
   internalIDToNameTable:
   - first:
@@ -92,12 +92,12 @@ TextureImporter:
     buildTarget: iPhone
     maxTextureSize: 2048
     resizeAlgorithm: 0
-    textureFormat: -1
+    textureFormat: 33
     textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
-    overridden: 0
+    overridden: 1
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
@@ -118,7 +118,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 14b2d7095aaa4412c9f79ca179fb2d25
+      spriteID: f16fe26e7b84d49a2b0933f411102a1b
       internalID: 6885721332012764999
       vertices: []
       indices: 
@@ -139,7 +139,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2f887ff59dbef4964b640eb8e91f93f1
+      spriteID: 138c726de4a384046b355fd1cf7976f3
       internalID: -2983896281052037210
       vertices: []
       indices: 
