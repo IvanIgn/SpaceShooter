@@ -10,6 +10,7 @@ public class SimpleEnemy : MonoBehaviour {
 	public ShipController Ship;
 	public bool isDead = false;
 	public SoundManager sm;
+   
 
 	void Start()
 	{
@@ -55,8 +56,10 @@ public class SimpleEnemy : MonoBehaviour {
 		if(coll.gameObject.CompareTag("shipB"))
 		{
 			Damage(Ship.bulletDmg);
-			Destroy(coll.gameObject);
-			sm.PlaySound(1);
+           
+            Destroy(coll.gameObject);
+
+            sm.PlaySound(1);
 			
 		}
         

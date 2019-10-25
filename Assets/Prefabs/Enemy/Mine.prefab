@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 111000010083932718}
   - component: {fileID: 114000010688375380}
   - component: {fileID: 114000010149842834}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Mine
   m_TagString: mine
   m_Icon: {fileID: 0}
@@ -170,7 +170,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4000012196313860}
   - component: {fileID: 212000011125687018}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: lights
   m_TagString: Untagged
   m_Icon: {fileID: 0}

@@ -18,6 +18,11 @@ public class MoveObj : MonoBehaviour {
 
         transform.Translate(moveDir * Time.deltaTime * Speed);
 
+        if (transform.position.x >= 15 || transform.position.x <= -15)
+        {
+            gameObject.SetActive(false);
+        }
+
     }
 
 
@@ -31,7 +36,13 @@ public class MoveObj : MonoBehaviour {
 		GameObject p = Instantiate(fx,transform.position,Quaternion.identity) as GameObject;
 		p.GetComponent<ParticleSystem>().Play();
 		Destroy(p,p.GetComponent<ParticleSystem>().main.duration);
-	}
-	}
+
+        
+        }
+
+    }
+
     
+   
+
 }

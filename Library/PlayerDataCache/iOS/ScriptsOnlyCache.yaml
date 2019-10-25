@@ -1,16 +1,22 @@
 ScriptsOnlyBuild:
   usedScripts:
     Assembly-CSharp.dll:
+    - Bonus
+    - BonusLife
     - EnemyGenerator
+    - MainMenu
     - Mine
     - MoveObj
-    - MoveObject
-    - ShipBulletCollision
+    - PauseMenu
+    - PlanetRotation
+    - Rocket
+    - RocketBonus
+    - ShipBullet
     - ShipController
     - SimpleEnemy
     - SoundManager
-    - SpaceGenerator
-    - Star
+    - StarGenerator
+    - StarMove
     - UnityEngine.UI.Joystick
     Unity.2D.Tilemap.Editor.dll:
     - UnityEditor.Tilemaps.GridPaintingState
@@ -34,7 +40,7 @@ ScriptsOnlyBuild:
     - UnityEngine.Networking.NetworkCallbacks
     - UnityEngine.Networking.NetworkIdentity
   sceneClasses:
-    Assets/Scenes/Level1.unity:
+    Assets/Scenes/MainMenu.unity:
     - Class: 1
       Script: {instanceID: 0}
     - Class: 4
@@ -53,11 +59,100 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 48
       Script: {instanceID: 0}
+    - Class: 65
+      Script: {instanceID: 0}
+    - Class: 81
+      Script: {instanceID: 0}
+    - Class: 82
+      Script: {instanceID: 0}
+    - Class: 83
+      Script: {instanceID: 0}
+    - Class: 104
+      Script: {instanceID: 0}
+    - Class: 114
+      Script: {instanceID: 9702}
+    - Class: 114
+      Script: {instanceID: 9744}
+    - Class: 114
+      Script: {instanceID: 9842}
+    - Class: 114
+      Script: {instanceID: 9844}
+    - Class: 114
+      Script: {instanceID: 9906}
+    - Class: 114
+      Script: {instanceID: 9918}
+    - Class: 114
+      Script: {instanceID: 9946}
+    - Class: 114
+      Script: {instanceID: 9956}
+    - Class: 114
+      Script: {instanceID: 10170}
+    - Class: 114
+      Script: {instanceID: 10452}
+    - Class: 114
+      Script: {instanceID: 10752}
+    - Class: 114
+      Script: {instanceID: 10860}
+    - Class: 114
+      Script: {instanceID: 10926}
+    - Class: 114
+      Script: {instanceID: 11298}
+    - Class: 114
+      Script: {instanceID: 11478}
+    - Class: 114
+      Script: {instanceID: 11584}
+    - Class: 114
+      Script: {instanceID: 11696}
+    - Class: 114
+      Script: {instanceID: 11914}
+    - Class: 114
+      Script: {instanceID: 11930}
+    - Class: 114
+      Script: {instanceID: 23304}
+    - Class: 115
+      Script: {instanceID: 0}
+    - Class: 124
+      Script: {instanceID: 0}
+    - Class: 128
+      Script: {instanceID: 0}
+    - Class: 135
+      Script: {instanceID: 0}
+    - Class: 136
+      Script: {instanceID: 0}
+    - Class: 157
+      Script: {instanceID: 0}
+    - Class: 212
+      Script: {instanceID: 0}
+    - Class: 213
+      Script: {instanceID: 0}
+    - Class: 222
+      Script: {instanceID: 0}
+    - Class: 223
+      Script: {instanceID: 0}
+    - Class: 224
+      Script: {instanceID: 0}
+    Assets/Scenes/Play.unity:
+    - Class: 1
+      Script: {instanceID: 0}
+    - Class: 4
+      Script: {instanceID: 0}
+    - Class: 20
+      Script: {instanceID: 0}
+    - Class: 21
+      Script: {instanceID: 0}
+    - Class: 28
+      Script: {instanceID: 0}
+    - Class: 43
+      Script: {instanceID: 0}
+    - Class: 48
+      Script: {instanceID: 0}
     - Class: 50
+      Script: {instanceID: 0}
+    - Class: 60
       Script: {instanceID: 0}
     - Class: 61
       Script: {instanceID: 0}
-    - Class: 65
+    - Class: 68
       Script: {instanceID: 0}
     - Class: 74
       Script: {instanceID: 0}
@@ -76,66 +171,58 @@ ScriptsOnlyBuild:
     - Class: 111
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 9688}
+      Script: {instanceID: 9702}
     - Class: 114
-      Script: {instanceID: 9698}
+      Script: {instanceID: 9756}
     - Class: 114
-      Script: {instanceID: 9732}
+      Script: {instanceID: 9802}
     - Class: 114
-      Script: {instanceID: 9758}
+      Script: {instanceID: 9884}
     - Class: 114
-      Script: {instanceID: 9828}
+      Script: {instanceID: 9886}
     - Class: 114
-      Script: {instanceID: 9830}
+      Script: {instanceID: 9906}
     - Class: 114
-      Script: {instanceID: 9888}
+      Script: {instanceID: 9956}
     - Class: 114
-      Script: {instanceID: 9900}
+      Script: {instanceID: 10026}
     - Class: 114
-      Script: {instanceID: 9928}
+      Script: {instanceID: 10082}
     - Class: 114
-      Script: {instanceID: 9938}
+      Script: {instanceID: 10232}
     - Class: 114
-      Script: {instanceID: 10072}
+      Script: {instanceID: 10452}
     - Class: 114
-      Script: {instanceID: 10154}
+      Script: {instanceID: 10464}
     - Class: 114
-      Script: {instanceID: 10434}
+      Script: {instanceID: 10468}
     - Class: 114
-      Script: {instanceID: 10836}
+      Script: {instanceID: 10724}
     - Class: 114
-      Script: {instanceID: 10902}
+      Script: {instanceID: 10752}
     - Class: 114
-      Script: {instanceID: 11284}
+      Script: {instanceID: 10926}
     - Class: 114
-      Script: {instanceID: 11304}
+      Script: {instanceID: 11008}
     - Class: 114
-      Script: {instanceID: 11316}
+      Script: {instanceID: 11478}
     - Class: 114
-      Script: {instanceID: 11466}
+      Script: {instanceID: 11576}
     - Class: 114
-      Script: {instanceID: 11506}
+      Script: {instanceID: 11584}
     - Class: 114
-      Script: {instanceID: 11586}
+      Script: {instanceID: 11692}
     - Class: 114
-      Script: {instanceID: 11752}
+      Script: {instanceID: 11884}
     - Class: 114
-      Script: {instanceID: 11836}
+      Script: {instanceID: 11914}
     - Class: 114
-      Script: {instanceID: 11874}
-    - Class: 114
-      Script: {instanceID: 11918}
-    - Class: 114
-      Script: {instanceID: 11970}
-    - Class: 114
-      Script: {instanceID: 31872}
+      Script: {instanceID: 11930}
     - Class: 115
       Script: {instanceID: 0}
+    - Class: 124
+      Script: {instanceID: 0}
     - Class: 128
-      Script: {instanceID: 0}
-    - Class: 135
-      Script: {instanceID: 0}
-    - Class: 136
       Script: {instanceID: 0}
     - Class: 157
       Script: {instanceID: 0}
@@ -162,12 +249,6 @@ ScriptsOnlyBuild:
     className: CanvasScaler
   - hash:
       serializedVersion: 2
-      Hash: e12411733a7019cf80e4190b730d25a0
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: UnityEngine.UI
-    className: Joystick
-  - hash:
-      serializedVersion: 2
       Hash: 984dcc0ba3707b7691fbdca8ff508d28
     assemblyName: Unity.TextMeshPro.dll
     namespaceName: TMPro
@@ -186,10 +267,16 @@ ScriptsOnlyBuild:
     className: TMP_Dropdown
   - hash:
       serializedVersion: 2
-      Hash: 44995fc753d5264132701074ba4c93d4
+      Hash: bf016f2d3b911511141fa97744fc0e47
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
-    className: MoveObj
+    className: Mine
+  - hash:
+      serializedVersion: 2
+      Hash: 40cf9e623471cd708d046ccb326970df
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: BonusLife
   - hash:
       serializedVersion: 2
       Hash: 5bd9a19c7b5f76c563418e28f48a561b
@@ -220,6 +307,18 @@ ScriptsOnlyBuild:
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
     className: ActivationTrack
+  - hash:
+      serializedVersion: 2
+      Hash: 69b26bb3f58d68378d3580a5481d0cc8
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Bonus
+  - hash:
+      serializedVersion: 2
+      Hash: 2d7e0deed6cebe6a490ee8ae5f166803
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: SoundManager
   - hash:
       serializedVersion: 2
       Hash: fc108ce7d98c40ac0907e8ca7f500c76
@@ -282,6 +381,18 @@ ScriptsOnlyBuild:
     className: GridLayoutGroup
   - hash:
       serializedVersion: 2
+      Hash: 40cf9e623471cd708d046ccb326970df
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: RocketBonus
+  - hash:
+      serializedVersion: 2
+      Hash: 640583ed8de367325b3db5e333be6ddc
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: ShipBullet
+  - hash:
+      serializedVersion: 2
       Hash: 8aa3d6ccbcb54ee8db6c1229854adaaa
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
@@ -292,12 +403,6 @@ ScriptsOnlyBuild:
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
     className: SignalAsset
-  - hash:
-      serializedVersion: 2
-      Hash: 40fe1cdd76d9d6d53f90c3be490b7617
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: ShipController
   - hash:
       serializedVersion: 2
       Hash: 0dbc3be398b4869a5c8d0d8481ee402c
@@ -340,6 +445,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.TextMeshPro.dll
     namespaceName: TMPro
     className: TMP_SubMeshUI
+  - hash:
+      serializedVersion: 2
+      Hash: 640583ed8de367325b3db5e333be6ddc
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Rocket
   - hash:
       serializedVersion: 2
       Hash: 52bcb9c2a78bdd8d98a59e915c346e75
@@ -396,6 +507,18 @@ ScriptsOnlyBuild:
     className: ControlPlayableAsset
   - hash:
       serializedVersion: 2
+      Hash: 1459c8123638394ecafa5a088ad85c69
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: EnemyGenerator
+  - hash:
+      serializedVersion: 2
+      Hash: d2977101dc1a92f5735af3aedb8f27e1
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: SimpleEnemy
+  - hash:
+      serializedVersion: 2
       Hash: b8a5e8091ab0b8861d2add371082c5e0
     assemblyName: Unity.TextMeshPro.dll
     namespaceName: TMPro
@@ -444,6 +567,18 @@ ScriptsOnlyBuild:
     className: SignalTrack
   - hash:
       serializedVersion: 2
+      Hash: 81602e3f118ff3106e70775145b7cb59
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: PauseMenu
+  - hash:
+      serializedVersion: 2
+      Hash: afc5b93a7b192de2dcb3832fe35a5c7e
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: PlanetRotation
+  - hash:
+      serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
     assemblyName: com.unity.multiplayer-hlapi.Runtime.dll
     namespaceName: UnityEngine.Networking
@@ -490,6 +625,12 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
     className: RawImage
+  - hash:
+      serializedVersion: 2
+      Hash: 7b7e797e87cd0bcb827909d3d9465aef
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: MoveObj
   - hash:
       serializedVersion: 2
       Hash: 5ad4aa237d47ac2bab17bacb672edf7a
@@ -558,16 +699,10 @@ ScriptsOnlyBuild:
     className: TimelineAsset
   - hash:
       serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+      Hash: 9426c442ff018248a5e4bba45389f96d
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
-    className: Star
-  - hash:
-      serializedVersion: 2
-      Hash: 46e8d085c9c428ee9a9194bec510cf7f
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: SpaceGenerator
+    className: ObjectPooler
   - hash:
       serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
@@ -606,16 +741,16 @@ ScriptsOnlyBuild:
     className: BeforeAfterTestCommandState
   - hash:
       serializedVersion: 2
-      Hash: d2977101dc1a92f5735af3aedb8f27e1
+      Hash: 7dacc6a402a5bfc5084133815bc3f50e
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
-    className: SimpleEnemy
+    className: ShipController
   - hash:
       serializedVersion: 2
-      Hash: 1d283993221ab11285b43e25ae3463a1
+      Hash: dfb9565b0bca182ec5c53b669e100893
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
-    className: Mine
+    className: StarMove
   - hash:
       serializedVersion: 2
       Hash: 1dcb82730d983b77cec736c6ef19f814
@@ -642,16 +777,22 @@ ScriptsOnlyBuild:
     className: TMP_StyleSheet
   - hash:
       serializedVersion: 2
+      Hash: e12411733a7019cf80e4190b730d25a0
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: UnityEngine.UI
+    className: Joystick
+  - hash:
+      serializedVersion: 2
+      Hash: a6a6f531a15a6874e7e62bf7fb986e7b
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: MainMenu
+  - hash:
+      serializedVersion: 2
       Hash: e6ae40841db498b6e673877ac45ad208
     assemblyName: com.unity.multiplayer-hlapi.Runtime.dll
     namespaceName: UnityEngine.Networking
     className: NetworkAnimator
-  - hash:
-      serializedVersion: 2
-      Hash: 9a0f6a5cd4990eff00d99383653f9753
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: EnemyGenerator
   - hash:
       serializedVersion: 2
       Hash: 5372ed2ce39229b1ac910757999a8be2
@@ -676,12 +817,6 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.EventSystems
     className: BaseInput
-  - hash:
-      serializedVersion: 2
-      Hash: 640583ed8de367325b3db5e333be6ddc
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: ShipBulletCollision
   - hash:
       serializedVersion: 2
       Hash: caa533b001ae39b864ba8425019e2268
@@ -720,6 +855,12 @@ ScriptsOnlyBuild:
     className: Dropdown
   - hash:
       serializedVersion: 2
+      Hash: bfd9a79bc93a4a7d4583d178e81c3151
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: StarGenerator
+  - hash:
+      serializedVersion: 2
       Hash: 748dd2a2a28da4e618912da5ac45684b
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.EventSystems
@@ -744,12 +885,6 @@ ScriptsOnlyBuild:
     className: Slider
   - hash:
       serializedVersion: 2
-      Hash: 008b2f040fa9268eb26d61da39703f05
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: MoveObject
-  - hash:
-      serializedVersion: 2
       Hash: 0fd6822f6177297bd0eb4d83cc7a9030
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
@@ -760,13 +895,8 @@ ScriptsOnlyBuild:
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
     className: PlayableTrack
-  - hash:
-      serializedVersion: 2
-      Hash: c35dad2f2d788a1538ee428b35f7427e
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: SoundManager
   platform: 9
   scenePathNames:
-  - Assets/Scenes/Level1.unity
-  playerPath: /Users/ivanignatkov/Desktop/SpaceShouter
+  - Assets/Scenes/MainMenu.unity
+  - Assets/Scenes/Play.unity
+  playerPath: /Users/ivanignatkov/Desktop/SpaceShooter1.0iOS

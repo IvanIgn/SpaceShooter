@@ -153,6 +153,7 @@ MonoBehaviour:
   Ship: {fileID: 0}
   isDead: 0
   sm: {fileID: 0}
+  fx: {fileID: 7474292927184799296, guid: 9aef30a9eefce42e5bcae44775e7caae, type: 3}
 --- !u!82 &82000010090141042
 AudioSource:
   m_ObjectHideFlags: 0

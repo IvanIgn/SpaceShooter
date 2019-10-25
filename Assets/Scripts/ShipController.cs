@@ -13,6 +13,8 @@ public class ShipController : MonoBehaviour {
 	public float minX;
 	public float maxX;
 	public GameObject bullet;
+
+    public int poolSize;
 	public GameObject rocket;
 	public int rocketCount;
 	public Text rocketCountT;
@@ -37,30 +39,25 @@ public class ShipController : MonoBehaviour {
 
     public AnimationClip respawn;
     Animation anim;
-    // private SpriteRenderer sp;
-    //private float animDelay = 3f;
-    // private Color shipColor;
-    //private bool isDead;
-
-    //  private List<GameObject> lives = new List<GameObject>();
+  
 
 
 
     void Start()
 	{
-        //DeathCount = 3;
-        // sp = GetComponent<SpriteRenderer>();
-        // Color
+        ///////
 
-        //shipColor = gameObject.GetComponent<SpriteRenderer>().color;
+       
+        InitObjectPool();
 
-        //anim = GetComponent<Animation>();
+        ///////
+        
         anim = GetComponent<Animation>();
         anim.clip = respawn;
         anim.Stop();
         isReadyToShoot = true;
 		isFire = false;
-        //isDead = false;
+        
 	}
 
 	void Update()
@@ -77,29 +74,10 @@ public class ShipController : MonoBehaviour {
 		{
 			Shoot();
 		}
-        /*
-		if(Life_points <= 0 && !isOver)
-		{
-            // GameOver();
-            DeathCount++;
-            Life_points = 10;
-            
-		}
-        if(Life_points <=0 && DeathCount == 3 && isOver)
-        {
-         
-            GameOver();
-            
-        }
-        */
+       
 
-        //if (Life_points <= 0 && !isDead)
-        //{
-        //    StartCoroutine(RespawnPlayerAnim());
-        //}
-
-        for (int c = 0; c<=3; c++)
-        {
+        //for (int c = 0; c<=3; c++)
+       // {
             if (death_Count != 0 && Life_points <= 0 && !isOver)
             {
                 Life_points = 10;
@@ -119,12 +97,29 @@ public class ShipController : MonoBehaviour {
             }
 
            
-        }
+      //  }
         
 
 	}
 
-	void GameOver()
+    void InitObjectPool()
+    {
+        for (int i = 0; i < poolSize; i++)
+        {
+            GameObject shipBullet = Instantiate(bullet);
+            shipBullet.SetActive(false);
+
+           // Rigidbody2D rb = cannonBall.GetComponent<Rigidbody2D>();
+            //bullet.Add(rb);
+        }
+
+
+    }
+
+   
+
+
+    void GameOver()
 	{
        
             isOver = true;
@@ -133,7 +128,7 @@ public class ShipController : MonoBehaviour {
             Hide();
             Save();
             GameOverPanel.SetActive(true);
-            DeadFX.Stop();
+            DeadFX.Stop();    
 
     }
 
@@ -205,22 +200,28 @@ public class ShipController : MonoBehaviour {
 		transform.Translate(axis*Time.deltaTime*Speed,Space.Self);
 	}
 
-	void Shoot()
-	{
-		foreach(Transform sp in shootPoints){
-		GameObject b = Instantiate(bullet,sp.position,Quaternion.identity) as GameObject;
-		Destroy(b,6);
+    void Shoot()
+    {
+        
+        foreach (Transform sp in shootPoints)
+        {
+            GameObject b = Instantiate(bullet, sp.position, Quaternion.identity) as GameObject;
+            Destroy(b, 6);
 
-		if(sp == shootPoints[shootPoints.Length-1])
-		    {
-			    StartCoroutine(ShootDelay());
-		    }
-		}
-		
-		sm.PlaySound(3);
-	}
+            if (sp == shootPoints[shootPoints.Length - 1])
+            {
+                StartCoroutine(ShootDelay());
+            }
+        }
 
-	public void RocketShoot()
+        sm.PlaySound(3);
+       
+
+    }
+
+   
+
+    public void RocketShoot()
 	{
         foreach (Transform sp in shootPoints)
         {
@@ -233,14 +234,14 @@ public class ShipController : MonoBehaviour {
             }
         } 
 	}
-
+    
 	IEnumerator ShootDelay()
 	{
 		isReadyToShoot = false;
 		yield return new WaitForSeconds(shootDelay);
 		isReadyToShoot = true;
 	}
-
+    
 	public void Fire(bool fire)
 	{
 		isFire = fire;
